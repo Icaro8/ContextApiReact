@@ -3,6 +3,9 @@ import styled from "styled-components";
 export const Container = styled.div`
   display:flex;
   flex-direction: column;
+  & >div {
+    flex-grow: 1;
+  }
   @media (max-width: 1035px){
     display:flex;
     flex-direction: column;
@@ -32,10 +35,10 @@ export const Title = styled.h3`
 `;
 
 export const ToolsTable = styled.div`
-  margin-left:10px;
+
   display:flex; 
   margin-top: 10px;
-  margin-bottom: 80px;
+
   > div{
     width: 64px;
     height: 64px;
